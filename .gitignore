@@ -1,0 +1,4 @@
+node_modules
+components
+out/component-build
+out/test

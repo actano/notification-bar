@@ -1,0 +1,1 @@
+module.exports = "default-placeholder": "Bitte wählen:"

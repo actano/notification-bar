@@ -1,0 +1,11 @@
+{
+  "name": "legal-notification-cookies",
+  "main": "out/client.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "component": "^1.1.0",
+    "jade": "^1.10.0",
+    "stylus": "^0.47.3"
+  }
+}
