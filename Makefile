@@ -14,7 +14,7 @@ test: component-build $(OUT)/$(TEST)/browser.js $(OUT)/$(TEST)/test.html
 $(ABS_C_BUILD)/build.js $(ABS_C_BUILD)/build.css: all
 	$(NODE_BIN)/component-build --out $(ABS_C_BUILD)
 
-all: $(OUT)/client.js $(OUT)/translations/index.js $(OUT)/translations/de_DE.js $(OUT)/translations/en_US.js $(OUT)/views/notification-bar.js $(OUT)/styles/notification-bar.css component.json
+all: $(OUT)/client.js $(OUT)/views/notification-bar.js $(OUT)/styles/notification-bar.css component.json
 
 $(OUT)/client.js: $(SRC)/client.coffee
 	$(NODE_BIN)/coffee --compile --output $(@D) $<
@@ -27,18 +27,6 @@ $(OUT)/$(TEST)/browser.js: $(SRC)/$(TEST)/browser.coffee $(OUT)/$(TEST)
 
 $(OUT)/$(TEST)/test.html: $(SRC)/$(TEST)/test.jade $(OUT)/$(TEST)
 	$(NODE_BIN)/jade --out $(@D)  $<
-
-$(OUT)/translations:
-	mkdir -p $@
-
-$(OUT)/translations/index.js: $(SRC)/translations/index.coffee $(OUT)/translations
-	$(NODE_BIN)/coffee --compile --output $(@D) $<
-
-$(OUT)/translations/de_DE.js: $(SRC)/translations/de_DE.coffee $(OUT)/translations
-	$(NODE_BIN)/coffee --compile --output $(@D) $<
-
-$(OUT)/translations/en_US.js: $(SRC)/translations/en_US.coffee $(OUT)/translations
-	$(NODE_BIN)/coffee --compile --output $(@D) $<
 
 $(OUT)/views:
 	mkdir -p $@
