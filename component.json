@@ -1,16 +1,17 @@
 {
   "name": "legal-notification-cookies",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "repository": "actano/legal-notification-cookies",
   "dependencies": {
-    "component/dom": "1.0.6",
-    "component/emitter": "1.1.3",
-    "actano/bind-jade": "0.0.1"
+    "actano/bind-jade": "0.0.2",
+    "component/cookie": "1.1.1",
+    "component/domify": "1.3.1",
+    "FortAwesome/Font-Awesome": "v4.2.0"
   },
   "development": {
     "dependencies": {
-      "visionmedia/mocha": "1.20.1",
-      "chaijs/chai": "1.9.1"
+      "chaijs/chai": "1.9.1",
+      "visionmedia/mocha": "1.20.1"
     },
     "scripts": [
       "out/test/browser.js"
@@ -18,10 +19,7 @@
   },
   "scripts": [
     "out/client.js",
-    "out/views/notification-bar.js",
-    "out/translations/index.js",
-    "out/translations/de_DE.js",
-    "out/translations/en_US.js"
+    "out/views/notification-bar.js"
   ],
   "styles": [
     "out/styles/notification-bar.css"

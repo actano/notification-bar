@@ -1,0 +1,20 @@
+#notification-bar {
+  background-color: #ddd;
+  max-height: 10em;
+  transition: max-height 300ms;
+}
+#notification-bar .container {
+  padding: 0.5em 1em;
+  margin: 0 auto;
+}
+#notification-bar .container .message {
+  color: #444;
+}
+#notification-bar .container .accept {
+  color: #888;
+  float: right;
+  cursor: pointer;
+}
+#notification-bar.closed {
+  max-height: 0;
+}
