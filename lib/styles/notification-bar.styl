@@ -2,18 +2,20 @@
     background-color #ddd
     max-height 10em
     transition max-height 300ms
+    display flex
 
-    .container
+    .message
         padding 0.5em 1em
         margin 0 auto
+        color #444
 
-        .message
-            color #444
-
-        .accept
-            color #888
-            float right
-            cursor pointer
+    a.accept
+        color #888
+        width auto
+        padding 0.5em 1em
+        float right
+        &:hover
+            color #555
 
     &.closed
         max-height 0

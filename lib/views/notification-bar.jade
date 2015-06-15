@@ -1,6 +1,5 @@
 #notification-bar
-    .container(style = maxWidth ? "max-width:#{maxWidth}" : "")
-        .message
-            span.accept
-                i.fa.fa-times
-            != message
+    .message
+        != message
+    a.accept(href='javascript:;')
+        i.fa.fa-times
