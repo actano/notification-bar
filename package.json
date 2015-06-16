@@ -7,5 +7,15 @@
     "component": "^1.1.0",
     "jade": "^1.10.0",
     "stylus": "^0.47.3"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "coffee-script": "^1.9.3",
+    "karma": "^0.12.36",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-mocha": "^0.1.10",
+    "mocha": "^2.2.5"
   }
 }
