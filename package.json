@@ -1,7 +1,7 @@
 {
   "name": "notification-bar",
   "main": "out/client.js",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "devDependencies": {
     "chai": "^3.0.0",
     "coffee-script": "^1.9.3",

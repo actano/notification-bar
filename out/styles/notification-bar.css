@@ -1,22 +1,23 @@
-#notification-bar {
+.notificationBar-container {
   background-color: #ddd;
   max-height: 10em;
   transition: max-height 300ms;
   display: flex;
+  overflow: hidden;
 }
-#notification-bar .message {
+.notificationBar-container .message {
   padding: 0.5em 1em;
   color: #444;
   flex-grow: 1;
 }
-#notification-bar a.accept {
+.notificationBar-container a.accept {
   color: #888;
   width: auto;
   padding: 0.5em 1em;
 }
-#notification-bar a.accept:hover {
+.notificationBar-container a.accept:hover {
   color: #555;
 }
-#notification-bar.closed {
+.notificationBar-container.closed {
   max-height: 0;
 }

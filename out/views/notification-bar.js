@@ -7,7 +7,7 @@ var jade_interp;
 ;var locals_for_with = (locals || {});(function (message) {
 jade_debug.unshift(new jade.DebugItem( 0, jade_debug[0].filename ));
 jade_debug.unshift(new jade.DebugItem( 1, jade_debug[0].filename ));
-buf.push("<div id=\"notification-bar\">");
+buf.push("<div class=\"notificationBar-container\">");
 jade_debug.unshift(new jade.DebugItem( undefined, jade_debug[0].filename ));
 jade_debug.unshift(new jade.DebugItem( 2, jade_debug[0].filename ));
 buf.push("<div class=\"message\">");
@@ -35,6 +35,6 @@ buf.push("</div>");
 jade_debug.shift();
 jade_debug.shift();}.call(this,"message" in locals_for_with?locals_for_with.message:typeof message!=="undefined"?message:undefined));;return buf.join("");
 } catch (err) {
-  jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, "#notification-bar\n    .message\n        != message\n    a.accept(href='javascript:;')\n        i.fa.fa-times\n");
+  jade.rethrow(err, jade_debug[0].filename, jade_debug[0].lineno, ".notificationBar-container\n    .message\n        != message\n    a.accept(href='javascript:;')\n        i.fa.fa-times\n");
 }
 } }
