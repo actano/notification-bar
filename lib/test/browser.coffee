@@ -7,9 +7,11 @@ showNotificationBarIfNeeded = require 'notification-bar'
 describe 'notification bar', ->
     mainContent = null
 
-    beforeEach ->
-        mainContent = document.body
+    before ->
+        mainContent = document.createElement 'div'
+        document.body.appendChild mainContent
 
+    beforeEach ->
         # reset cookies
         for cookieName of cookie()
             cookie cookieName, null, path: '/'
