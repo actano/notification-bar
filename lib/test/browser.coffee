@@ -11,6 +11,11 @@ describe 'notification bar', ->
         mainContent = document.createElement 'div'
         document.body.appendChild mainContent
 
+    after ->
+        # show the notification bar for demo purposes
+        mainContent.innerHTML = ''
+        showNotificationBarIfNeeded parentElement: mainContent, message: 'Hello, World!', cookieName: COOKIE_ACCEPTED_NAME
+
     beforeEach ->
         # reset cookies
         for cookieName of cookie()
