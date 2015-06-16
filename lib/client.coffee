@@ -4,7 +4,7 @@ bindTemplate = require 'bind-jade'
 
 notificationBarView = bindTemplate require './views/notification-bar'
 
-showCookieNotificationIfNeeded = ({cookieName, message, parentElement}) ->
+module.exports = ({cookieName, message, parentElement}) ->
     if not cookie cookieName
         notificationBar = domify notificationBarView {message}
         notificationBar.querySelector '.accept'
@@ -16,5 +16,3 @@ showCookieNotificationIfNeeded = ({cookieName, message, parentElement}) ->
             notificationBar.parentElement.removeChild notificationBar
 
         parentElement.insertBefore notificationBar, parentElement.firstChild
-
-module.exports = showCookieNotificationIfNeeded

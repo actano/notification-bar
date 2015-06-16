@@ -1,5 +1,5 @@
 {
-  "name": "legal-notification-cookies",
+  "name": "notification-bar",
   "main": "out/client.js",
   "version": "0.1.0",
   "dependencies": {

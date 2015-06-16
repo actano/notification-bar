@@ -1,7 +1,7 @@
 {
-  "name": "legal-notification-cookies",
+  "name": "notification-bar",
   "version": "0.1.0",
-  "repository": "actano/legal-notification-cookies",
+  "repository": "actano/notification-bar",
   "dependencies": {
     "actano/bind-jade": "0.0.2",
     "component/cookie": "1.1.1",
