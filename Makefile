@@ -34,4 +34,4 @@ $(OUT)/styles:
 $(OUT)/styles/notification-bar.css: $(SRC)/styles/notification-bar.styl | $(OUT)/styles
 	$(NODE_BIN)/stylus -o $(OUT)/styles --inline $<
 
-.PHONY: compoent-build test all clean
+.PHONY: test all clean
