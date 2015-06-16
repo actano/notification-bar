@@ -21,7 +21,7 @@ describe 'notification bar', ->
         it 'should render if cookie is not there', ->
             showNotificationBarIfNeeded parentElement: mainContent, message: 'foo', cookieName: COOKIE_ACCEPTED_NAME
 
-            expect(document.querySelector '#notification-bar').to.exist
+            expect(document.querySelector '.notificationBar-container').to.exist
 
         it 'should not render if cookie is already there', ->
             cookie COOKIE_ACCEPTED_NAME, '1', path: '/'
@@ -33,7 +33,7 @@ describe 'notification bar', ->
             showNotificationBarIfNeeded parentElement: mainContent, message: 'foo', cookieName: COOKIE_ACCEPTED_NAME
             document.querySelector('.accept').click()
 
-            expect(document.querySelector('#notification-bar').classList.contains 'closed').to.be.true
+            expect(document.querySelector('.notificationBar-container').classList.contains 'closed').to.be.true
 
         it 'should set the cookie when closing', ->
             showNotificationBarIfNeeded parentElement: mainContent, message: 'foo', cookieName: COOKIE_ACCEPTED_NAME
@@ -45,13 +45,13 @@ describe 'notification bar', ->
         it 'should always render', ->
             showNotificationBarIfNeeded parentElement: mainContent, message: 'foo'
 
-            expect(document.querySelector '#notification-bar').to.exist
+            expect(document.querySelector '.notificationBar-container').to.exist
 
         it 'should close when "x" is clicked', ->
             showNotificationBarIfNeeded parentElement: mainContent, message: 'foo'
             document.querySelector('.accept').click()
 
-            expect(document.querySelector('#notification-bar').classList.contains 'closed').to.be.true
+            expect(document.querySelector('.notificationBar-container').classList.contains 'closed').to.be.true
 
         it 'should not set the cookie when closing', ->
             showNotificationBarIfNeeded parentElement: mainContent, message: 'foo'
