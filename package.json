@@ -1,7 +1,7 @@
 {
   "name": "notification-bar",
   "main": "out/client.js",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.0.0",
