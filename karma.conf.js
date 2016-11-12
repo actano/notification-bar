@@ -1,20 +1,33 @@
-// TODO: This file was created by bulk-decaffeinate.
-// Sanity-check the conversion and remove this comment.
-export default function (config) {
-  return config.set({
+/* eslint-disable import/no-extraneous-dependencies */
+
+const karmaWebpack = require('karma-webpack')
+const webpackConfig = require('./webpack.config')
+
+webpackConfig.devtool = 'inline-source-map'
+
+module.exports = (config) => {
+  config.set({
     frameworks: ['mocha', 'chai'],
 
     files: [
-      'out/component-build/build.js',
-      'out/component-build/build.css',
-      'lib/test/**/*.coffee',
-            { pattern: 'out/component-build/fortawesome/**/*', watched: false, included: false, served: true },
+      // 'dist/*.js',
+      'lib/index.js',
+      'lib/test/**/*.js',
     ],
 
     preprocessors: {
-      '**/*.coffee': ['coffee'],
+      'lib/**/*.js': ['webpack', 'sourcemap'],
     },
 
-    singleRun: false,
+    singleRun: true,
+    plugins: [
+      karmaWebpack, 'karma-*',
+    ],
+    webpack: webpackConfig,
+    webpackMiddleware: {
+      stats: {
+        chunks: false,
+      },
+    },
   })
 }
