@@ -3,7 +3,7 @@ root = true
 [*]
 charset = utf-8
 
-[**.{coffee,styl,jade}]
+[**.{styl,jade}]
 indent_style = space
 indent_size = 4
 insert_final_newline = true
