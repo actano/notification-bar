@@ -29,6 +29,7 @@
   "dependencies": {
     "bind-jade": "git://github.com/actano/bind-jade",
     "component-cookie": "^1.1.2",
-    "domify": "^1.3.3"
+    "domify": "^1.3.3",
+    "font-awesome": "^4.7.0"
   }
 }
