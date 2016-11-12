@@ -42,7 +42,6 @@
   "dependencies": {
     "component-cookie": "^1.1.2",
     "domify": "^1.3.3",
-    "font-awesome": "^4.7.0",
-    "jade": "^1.11.0"
+    "font-awesome": "^4.7.0"
   }
 }
