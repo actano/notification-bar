@@ -41,7 +41,9 @@
   },
   "dependencies": {
     "component-cookie": "^1.1.2",
-    "domify": "^1.3.3",
+    "domify": "^1.3.3"
+  },
+  "peerDependencies": {
     "font-awesome": "^4.7.0"
   }
 }

@@ -21,24 +21,12 @@ const config = {
         loader: 'style-loader!css-loader!postcss-loader!stylus-loader?{"sourceMap": true, "requireSyntax": true, "resolve url": true}',
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader!postcss-loader',
-      },
-      {
         test: /\.js/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
           presets: ['es2015'],
         },
-      },
-      {
-        test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?mimetype=application/font-woff',
-      },
-      {
-        test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader',
       },
       {
         test: /\.json$/,
