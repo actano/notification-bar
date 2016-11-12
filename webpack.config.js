@@ -46,11 +46,6 @@ const config = {
       },
     ],
   },
-  resolve: {
-    alias: {
-      jade: 'jade/lib/runtime.js',
-    },
-  },
   postcss: [
     autoprefixer({ browsers: ['last 2 versions', 'Firefox 15'] }),
   ],

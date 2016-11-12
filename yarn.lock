@@ -668,10 +668,6 @@ binary-extensions@^1.0.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-1.7.0.tgz#6c1610db163abfb34edfe42fa423343a1e01185d"
 
-"bind-jade@git://github.com/actano/bind-jade":
-  version "0.0.5"
-  resolved "git://github.com/actano/bind-jade#bca046bdbc810febb7028ff63d41b82402329c40"
-
 blob@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/blob/-/blob-0.0.4.tgz#bcf13052ca54463f30f9fc7e95b9a47630a94921"
