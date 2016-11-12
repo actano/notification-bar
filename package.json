@@ -1,6 +1,6 @@
 {
   "name": "notification-bar",
-  "main": "out/client.js",
+  "main": "dist/index.js",
   "version": "0.3.3",
   "license": "MIT",
   "scripts": {
