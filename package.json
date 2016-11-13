@@ -8,7 +8,8 @@
     "webpack": "webpack",
     "karma": "karma",
     "test": "karma start --browsers Chrome",
-    "test:watch": "yarn run test -- --no-single-run --watch"
+    "test:watch": "yarn run test -- --no-single-run --watch",
+    "dist": "yarn run webpack"
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
