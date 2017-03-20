@@ -75,7 +75,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = function (_ref) {
 	  var cookieName = _ref.cookieName,
 	      message = _ref.message,
-	      parentElement = _ref.parentElement;
+	      parentElement = _ref.parentElement,
+	      maxage = _ref.maxage;
 	  var iconStyling = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : { className: 'fa fa-times', content: '' };
 	
 	  if (cookieName != null && (0, _componentCookie2.default)(cookieName)) {
@@ -85,7 +86,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var notificationBar = (0, _domify2.default)((0, _notificationBar2.default)({ message: message, iconStyling: iconStyling }));
 	  notificationBar.querySelector('.accept').addEventListener('click', function () {
 	    if (cookieName != null) {
-	      (0, _componentCookie2.default)(cookieName, '1', { path: '/' });
+	      (0, _componentCookie2.default)(cookieName, '1', { path: '/',  maxage: maxage });
 	    }
 	    notificationBar.classList.add('closed');
 	  });
