@@ -86,7 +86,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  var notificationBar = (0, _domify2.default)((0, _notificationBar2.default)({ message: message, iconStyling: iconStyling }));
 	  notificationBar.querySelector('.accept').addEventListener('click', function () {
 	    if (cookieName != null) {
-	      (0, _componentCookie2.default)(cookieName, '1', { path: '/',  maxage: maxage });
+	      (0, _componentCookie2.default)(cookieName, '1', { path: '/', maxage: maxage });
 	    }
 	    notificationBar.classList.add('closed');
 	  });
